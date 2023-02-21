@@ -7,7 +7,7 @@
     </div>
     <div>
         <label for="exampleFormControlTextarea1" class="form-label">Precio: </label>
-        <input type="text" class="form-control" formControlName="price" placeholder="9,50 €">
+        <input type="text" class="form-control" formControlName="price" placeholder="$9,50">
     </div>
     <div>
     <label for="exampleFormControlInput1" class="form-label">Descripción:</label>
@@ -27,27 +27,23 @@
     <div id="img__form">
         <p>Nuevo producto:</p>
         <img src="{{ProductsNew.image}}">
-        <p class="name__img"> {{ProductsNew.name}} </p> 
+        <p class="name__img"> {{ProductsNew.name | titlecase }} </p> 
         <p class="description__img"> {{ProductsNew.description}} </p>
-        <p class="price__img"> {{ProductsNew.price}} </p> 
+        <p class="price__img"> {{ProductsNew.price | currency:'ARS'}} </p> 
     
     <div class="container__star">
-        <input type="radio" name="star" id="star-5" value="calcular">
+        <input type="radio" name="star" id="star-5" value="5">
         <label for="star-5" class="fa-solid fa-star">★</label>
-        <input type="radio" name="star" id="star-4" value="calcular">
+        <input type="radio" name="star" id="star-4" value="4">
         <label for="star-4" class="fa-solid fa-star">★</label>
-        <input type="radio" name="star" id="star-3" value="calcular">
+        <input type="radio" name="star" id="star-3" value="3">
         <label for="star-3" class="fa-solid fa-star">★</label>
-        <input type="radio" name="star" id="star-2" value="calcular">
+        <input type="radio" name="star" id="star-2" value="2">
         <label for="star-2" class="fa-solid fa-star">★</label>
-        <input type="radio" name="star" id="star-1" value="calcular">
+        <input type="radio" name="star" id="star-1" value="1">
         <label for="star-1" class="fa-solid fa-star">★</label>
     </div>
     </div>
     </div>
-    
-    
-
-    
     
     

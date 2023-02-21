@@ -16,9 +16,6 @@ export class GestionComponent {
     constructor(private formbuilder:FormBuilder, private shopeameServicesService: ShopeameServicesService){}
     public ProductsNew = this.shopeameServicesService.product;
   
-    calcularpromedio(){
-      
-    }
     //lo que va inicializar, llama al formulario
     ngOnInit(): void{
     this.creationform =this.formbuilder.group({

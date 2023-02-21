@@ -1,4 +1,4 @@
-import { InterfaceProducts } from './../models/interface-products';
+
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({

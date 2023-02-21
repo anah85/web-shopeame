@@ -13,8 +13,10 @@ export class ShopeameServicesService {
     name: '',
     price: '',
     description: '',
+    stars: 1,
     image: '',
   }
+
 
   products? = [];
 

@@ -1,3 +1,4 @@
+import { InterfaceProducts } from './../models/interface-products';
 import { Component, OnInit } from '@angular/core';
 import { ShopeameServicesService } from 'src/app/shared/services/shopeame-services.service';
 import { Router } from '@angular/router';
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class ProductsComponent implements OnInit {
 
-  products?: any = [];
+  products: InterfaceProducts [] = [];
   constructor(private shopeameService: ShopeameServicesService, private router: Router) { }
 
 

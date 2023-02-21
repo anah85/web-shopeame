@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  years: number = 2020;
+  today = Date.now();
+  
 }

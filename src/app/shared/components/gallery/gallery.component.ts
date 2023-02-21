@@ -7,17 +7,22 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
+  stars: number = 1;
+  estrella: String ="★";
+
+
   @Input() index: number = -1;
   @Input() products: any = {
     id: '',
     name: '',
     price: '',
     description: '',
-    stars: 0,
+    stars: 1,
     image: ''
   }
   constructor(private shopeameServicesService: ShopeameServicesService) { }
   ngOnInit(): void {
+
   }
   put(id: string){
     this.shopeameServicesService.getProductById(id).subscribe((res: any) => {
