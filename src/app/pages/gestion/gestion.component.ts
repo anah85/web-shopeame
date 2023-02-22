@@ -22,6 +22,7 @@ export class GestionComponent {
     name:[this.ProductsNew.name,[Validators.required,Validators.minLength(5)]],
     price:[this.ProductsNew.price,[Validators.required]],
     description:[this.ProductsNew.description,[Validators.required,Validators.maxLength(20)]],
+    stars:[this.ProductsNew.stars,[Validators.required,Validators.minLength(1)]],
     image:[this.ProductsNew.image,[Validators.required]],
 });
 this.creationform.valueChanges.subscribe(changes=>{

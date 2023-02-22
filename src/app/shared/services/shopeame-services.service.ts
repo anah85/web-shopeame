@@ -52,6 +52,7 @@ export class ShopeameServicesService {
   editProduct(id:number){
     return this.http.delete(`${this.url}/${id}`)
   }
+  
 }
 
 

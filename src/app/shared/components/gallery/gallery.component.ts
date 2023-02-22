@@ -17,7 +17,7 @@ export class GalleryComponent implements OnInit {
     name: '',
     price: '',
     description: '',
-    stars: 1,
+    stars: 0,
     image: ''
   }
   constructor(private shopeameServicesService: ShopeameServicesService) { }
