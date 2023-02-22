@@ -13,10 +13,12 @@
   justify-content: center;
   background-color: rgb(247, 189, 88);
   width: 100%;
-  height: 85px;
+  height: 90px;
+  align-items: stretch;
 }
 ul{
-display: flex;
+  display: flex;
+align-items: stretch;
 }
 li{
 display:flex;
@@ -26,16 +28,18 @@ align-items: center;
 }
 a{
 text-decoration: none;
+display: flex;
+align-items: center;
+flex-direction: column;
 }
 
-p {
+h5 {
   color:black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 li:hover, .image:hover{
   background-color:rgb(248, 208, 139);;
-  text-shadow: 2px 2px rgb(248, 208, 139);;
-  border-radius: 3px;
+ 
 }
 
